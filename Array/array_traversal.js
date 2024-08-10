@@ -1,5 +1,4 @@
 
-
 let arr = [1, 2, 4]
 let newEl = 3;
 let pos = 2;
