@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary search</title>
+</head>
+
+<body>
+    <h1>Binary search</h1>
+
+    <script>
+        let data = [1, 5, 7, 8, 11, 15, 18];
+        let find = 18
+        let start = 0;
+        let end = data.length - 1;
+        let postion = undefined;
+        while (start <= end) {   //0<=10
+            let mid = Math.floor((start + end) / 2)
+            if (data[mid] === find) {
+                postion = mid
+                break;
+            } else if (data[mid] < find) {
+                start = mid + 1
+            } else {
+                end = mid - 1
+            }
+        }
+        console.warn(postion)
+    </script>
+</body>
+
+</html>
